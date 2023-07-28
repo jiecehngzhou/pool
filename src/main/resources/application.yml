@@ -1,0 +1,19 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 21
+      connection-timeout: 300000
+logging:
+  level:
+    com.mapper: debug
+
+#根据自己电脑修改位置
+excel:
+  filePath: "C:/Users/vl/Desktop/"
+
